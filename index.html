@@ -1,13 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Muebles</title>
+    <title>Tienda Muebles - Tu Tienda de Muebles Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    header+nav+main+footer
+    <header>
+        <h1>Tienda <span class="azul">Muebles</span></h1>
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="principal-img imagen-fondo"></div>
+
+    <section id="categorias">
+        <h2>Categorias de Productos</h2>
+        <div class="categorias__lista">
+            <div class="categorias__cat">
+                <img src="img/categoria1.jpg" alt="Categoria de Oficina">
+                <a href="#">Oficina</a>
+            </div>
+            <div class="categorias__cat">
+                <img src="img/categoria2.jpg" alt="Categoria de Hogar">
+                <a href="#">Hogar</a>
+            </div>
+            <div class="categorias__cat">
+                <img src="img/categoria3.jpg" alt="Categoria de Cocina">
+                <a href="#">Cocina</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="nosotros__img imagen-fondo"></div>
+        <div class="nosotros__nos">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus labore praesentium, deserunt
+                unde, provident dolorum deleniti facilis accusantium voluptatum atque repellat id sint inventore
+                officiis nostrum nihil sapiente dicta?</p>
+        </div>
+    </section>
+
+    <section id="tienda">
+        <h2>Nuestros Productos</h2>
+        <div class="tienda__lista">
+
+            <div class="tienda__producto">
+                <img src="img/producto1.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">1.500€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="tienda__producto">
+                <img src="img/producto2.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">200€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="tienda__producto">
+                <img src="img/producto3.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">3.000€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="tienda__producto">
+                <img src="img/producto4.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">400€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="tienda__producto">
+                <img src="img/producto5.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">5.555€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="tienda__producto">
+                <img src="img/producto6.jpg" alt="Mueble de Salon">
+                <div class="producto__descripcion">
+                    <h3>Producto 6</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius esse harum voluptate dolores
+                        cupiditate aut beatae rerum repellat, unde officia.</p>
+                    <p class="producto__precio">6.666€</p>
+                    <a href="#" class="boton">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="pie">
+            <div>
+                <h3>Catégorias</h3>
+                <ul>
+                    <li><a href="#">Cocina</a></li>
+                    <li><a href="#">Oficina</a></li>
+                    <li><a href="#">Jardin</a></li>
+                    <li><a href="#">Cochera</a></li>
+                    <li><a href="#">Dormitorio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Mision, Vision y Valores</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Politica de Privacidad</a></li>
+                    <li><a href="#">Términos del Servicio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Ayuda en Linea</a></li>
+                    <li><a href="#">Confianza y Seguridad</a></li>
+                </ul>
+            </div>
+        </div>
+        <h6>Todos los derechos reservados. &copy; 2024, TiendaMuebles</h6>
+    </footer>
+
+
+
 </body>
+
 </html>

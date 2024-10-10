@@ -1,0 +1,231 @@
+/*
+LINEAS CSS RECOMENDABLES EN TODOS LOS PROYECTOS.
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+
+/****** CSS DE LA PAGINA ******/
+
+/*
+.RALEWAY {
+  font-family: "Raleway", sans-serif;
+}
+*/
+/*
+.PLAYFARE {
+  font-family: "Playfair", serif;
+}
+*/
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair", serif;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 5rem 0;
+    font-weight: 800;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h6 {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #037bc0;
+}
+
+.azul {
+    color: #037bc0;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sections */
+section {
+}
+
+/* Menu de Navegacion */
+.menu-principal ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-top: 2px solid lightgray;
+    padding: 2rem;
+}
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+}
+.menu-principal a:hover {
+    color: #037bc0;
+}
+.menu-principal a:focus {
+    color: lightgray;
+}
+
+/* Imagen de Fondo */
+.principal-img {
+    background-image: url(../img/principal.jpg);
+    height: 60rem;
+}
+.imagen-fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Categorias */
+#categorias {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categorias__lista {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.categorias__cat {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid lightgray; */
+}
+.categorias__cat a {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.categorias__cat a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-radius: 0 0 1rem 0;
+}
+
+/* Sobre Nosotros */
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #037bc0;
+    color: #fff;
+    margin-top: 4rem;
+}
+.nosotros__img {
+    background-image: url(../img/nosotros.jpg);
+    min-height: 40rem;
+}
+.nosotros__nos {
+    padding: 6rem;
+}
+
+/* Tienda */
+#tienda {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tienda__producto:nth-child(1) {grid-area: pro1;}
+.tienda__producto:nth-child(2) {grid-area: pro2;}
+.tienda__producto:nth-child(3) {grid-area: pro3;}
+.tienda__producto:nth-child(4) {grid-area: pro4;}
+.tienda__producto:nth-child(5) {grid-area: pro5;}
+.tienda__producto:nth-child(6) {grid-area: pro6;}
+.tienda__lista {
+    display: grid;
+    grid-template-areas:"pro1 pro1 pro1 pro1 pro1 pro1 "
+                        "pro2 pro2 pro2 pro3 pro3 pro3 "
+                        "pro4 pro4 pro5 pro5 pro6 pro6 ";
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    width: 80%;
+}
+.tienda__producto {
+    display: flex;
+    flex-direction: column;
+    background-color: #037bc0;
+    color: #fff;
+}
+.tienda__producto:nth-child(1) {
+    flex-direction: row;
+}
+.tienda__producto:nth-child(1) img {
+    width: 70%;
+    object-fit: cover;
+}
+.producto__descripcion {
+    padding: 2rem;
+}
+
+/* Botones y Precio */
+.boton {
+    background-color: #8cbc00;
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    display: block;
+    text-align: center;
+    transition: background-color .2s ease-out;
+}
+.boton:hover {
+    background-color: #769c02;
+}
+.producto__precio {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Pie */
+#pie {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#pie ul {
+    list-style: none;
+    padding: 0;
+}
+footer h6 {
+    text-align: center;
+}
+
+#pie a {
+    text-decoration: none;
+    color: black;
+}
+#pie a:hover {
+    color: #037bc0;
+}
+#pie a:focus {
+    color: lightgray;
+}
